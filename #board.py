@@ -1,13 +1,4 @@
-#decide wether to have a program that plays with the computer or to thave a system with two players.
-#if single player mode: player decides whether they play as X or O. Player X always come first.
-#game should have: player X and player O
-#make a game board
-#
-#make a system that shows the winner
-#make the game restart if player wants to
-
 import random 
-
 
 num_ingame = [1,2,3,4,5,6,7,8,9]
 game_board = [[1,2,3], [4,5,6], [7,8,9]]
@@ -23,7 +14,7 @@ def printGameBoard():
     print ("\n+---+---+---+")
 
 
-print ("\n\t\tTIC TAC TOE \n\tType START to begin single player game \n\tType TWO for two player mode \n\tType HELP to know how to play \n\tType QUIT to stop the game")
+print ("\n\t\t TIC TAC TOE \n\t\t°˖✧◝(⁰▿⁰)◜✧˖° \n\n\tType START to begin single player game \n\tType TWO for two player mode \n\tType HELP to know how to play \n\tType QUIT to stop the game")
 
 command = ""
 
@@ -32,8 +23,6 @@ while True:
     if command == "START":
         player_one = input("\tPlayer 1 \nEnter your name: ")
         print (f"\n{player_one}, you'll play as X")
-        
-        #board
 
         printGameBoard
 
@@ -58,58 +47,58 @@ while True:
             elif(num == 8):
                 game_board[2][2] = turn
 
-        ### Define function to check for a winner
+
         def checkForWinner(game_board):
-            ### X axis
+            # X axis
             if(game_board[0][0] == 'X' and game_board[0][1] == 'X' and game_board[0][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][0] == 'O' and game_board[0][1] == 'O' and game_board[0][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[1][0] == 'X' and game_board[1][1] == 'X' and game_board[1][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[1][0] == 'O' and game_board[1][1] == 'O' and game_board[1][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[2][0] == 'X' and game_board[2][1] == 'X' and game_board[2][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[2][0] == 'O' and game_board[2][1] == 'O' and game_board[2][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
-            ### Y axis
+            # Y axis
             if(game_board[0][0] == 'X' and game_board[1][0] == 'X' and game_board[2][0] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][0] == 'O' and game_board[1][0] == 'O' and game_board[2][0] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[0][1] == 'X' and game_board[1][1] == 'X' and game_board[2][1] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][1] == 'O' and game_board[1][1] == 'O' and game_board[2][1] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[0][2] == 'X' and game_board[1][2] == 'X' and game_board[2][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][2] == 'O' and game_board[1][2] == 'O' and game_board[2][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
-            ### Cross wins
+            # Cross wins
             elif(game_board[0][0] == 'X' and game_board[1][1] == 'X' and game_board[2][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][0] == 'O' and game_board[1][1] == 'O' and game_board[2][2] == 'O'):
-                print("O has won!")  
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")  
                 return "O"
             elif(game_board[0][2] == 'X' and game_board[1][1] == 'X' and game_board[2][0] == 'X'):
-                print("X has won!")  
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")  
                 return "X"
             elif(game_board[0][2] == 'O' and game_board[1][1] == 'O' and game_board[2][0] == 'O'):
-                print("O has won!") 
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★") 
                 return "O" 
             else:
                 return "N"
@@ -118,7 +107,7 @@ while True:
         turnCounter = 0
 
         while(leaveLoop == False):
-        ### It's the player turn
+            # It's the player turn
             if(turnCounter % 2 == 0):
                 printGameBoard()
                 numberPicked = int(input("\nChoose a number [1-9]: "))
@@ -128,7 +117,7 @@ while True:
                 else:
                     print("Invalid input. Please try again.")
                 turnCounter += 1
-            ### It's the computer's turn
+            # It's the computer's turn
             else:
                 while(True):
                     cpuChoice = random.choice(num_ingame)
@@ -147,7 +136,7 @@ while True:
     elif command == "TWO":
         player_one = input("\tPlayer 1 \nEnter your name: ")
         print (f"{player_one} will play as X")
-        player_two = input ("\tPLayer 2 \nEnter your name: ")
+        player_two = input ("\n\tPLayer 2 \nEnter your name: ")
         print (f"{player_two} will play as O")
         print (f"\n{player_one} moves first")
         
@@ -174,58 +163,57 @@ while True:
             elif(num == 8):
                 game_board[2][2] = turn
 
-        ### Define function to check for a winner
         def checkForWinner(game_board):
-            ### X axis
+            # X axis
             if(game_board[0][0] == 'X' and game_board[0][1] == 'X' and game_board[0][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][0] == 'O' and game_board[0][1] == 'O' and game_board[0][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[1][0] == 'X' and game_board[1][1] == 'X' and game_board[1][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[1][0] == 'O' and game_board[1][1] == 'O' and game_board[1][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[2][0] == 'X' and game_board[2][1] == 'X' and game_board[2][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[2][0] == 'O' and game_board[2][1] == 'O' and game_board[2][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
-            ### Y axis
+            # Y axis
             if(game_board[0][0] == 'X' and game_board[1][0] == 'X' and game_board[2][0] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][0] == 'O' and game_board[1][0] == 'O' and game_board[2][0] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[0][1] == 'X' and game_board[1][1] == 'X' and game_board[2][1] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][1] == 'O' and game_board[1][1] == 'O' and game_board[2][1] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
             elif(game_board[0][2] == 'X' and game_board[1][2] == 'X' and game_board[2][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][2] == 'O' and game_board[1][2] == 'O' and game_board[2][2] == 'O'):
-                print("O has won!")
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")
                 return "O"
-            ### Cross wins
+            # Cross wins
             elif(game_board[0][0] == 'X' and game_board[1][1] == 'X' and game_board[2][2] == 'X'):
-                print("X has won!")
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")
                 return "X"
             elif(game_board[0][0] == 'O' and game_board[1][1] == 'O' and game_board[2][2] == 'O'):
-                print("O has won!")  
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★")  
                 return "O"
             elif(game_board[0][2] == 'X' and game_board[1][1] == 'X' and game_board[2][0] == 'X'):
-                print("X has won!")  
+                print("X has won! (/￣w￣)/‥∵:*:☆*゜★")  
                 return "X"
             elif(game_board[0][2] == 'O' and game_board[1][1] == 'O' and game_board[2][0] == 'O'):
-                print("O has won!") 
+                print("O has won! (ﾉ >ω<)ﾉ :｡･:*:･ﾟ’★") 
                 return "O" 
             else:
                 return "N"
@@ -234,7 +222,7 @@ while True:
         turnCounter = 0
 
         while(leaveLoop == False):
-        ### It's the player turn
+            # It's the player's turn
             if(turnCounter % 2 == 0):
                 printGameBoard()
                 numberPicked = int(input("\nChoose a number [1-9]: "))
@@ -244,7 +232,7 @@ while True:
                 else:
                     print("Invalid input. Please try again.")
                 turnCounter += 1
-            ### It's the other player's turn
+            # It's the other player's turn
             else:
                 printGameBoard()
                 numberPicked = int(input("\nChoose a number [1-9]: "))
@@ -254,11 +242,11 @@ while True:
                 else:
                     print("Invalid input. Please try again.")
                 turnCounter += 1
-                
+
             
             winner = checkForWinner(game_board)
             if(winner != "N"):
-                print("\nGame over! Thank you for playing :)")
+                print("\nGame over! Thank you for playing ")
                 break
 
     elif command == "HELP":
@@ -266,11 +254,10 @@ while True:
         print ("Two Player Game: \n\tSame rule as the single player game, but now your enemy has the brain to beat you in the game. lol")
         print ("\tGood Luck! ( ๑ ˃̵ᴗ˂̵)و ")
     elif command == "QUIT":
-        quit_game = input("Do you want to end game? (Y/N) ").upper()
+        quit_game = input("Do you want to exit? (Y/N) ").upper()
         if quit_game == "Y":
-            print ("Thank you for playing the game! \n\t(・ε・｀)")
+            print ("Thank you for checking out the game! \n\t(・ε・｀)")
         elif quit_game == "N":
            continue
     else:
         print ("You seem to have entered the wrong command, try again. \n\t\t(º﹃º)...")
-
